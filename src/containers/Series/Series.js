@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import SeriesList from '../../components/SeriesList';
-import Loader from '../../components/Loader';
+import SeriesList from '../../components/SeriesList/SeriesList';
+import Loader from '../../components/Loader/Loader';
+import Intro from '../../components/Intro/Intro';
 
 class Series extends Component {
   state = {
@@ -22,6 +23,7 @@ class Series extends Component {
     return (
       <>
       <div>
+        <Intro message="Here you can find all of your most loved series" />
         <input value={seriesName} type="text" onChange={this.onSeriesInputChange} />
       </div>
       {
